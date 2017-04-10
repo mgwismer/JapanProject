@@ -1,0 +1,54 @@
+body {
+  color: #5d5d5d;
+  font-family: Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-size: 30px;
+  margin: auto;
+  margin-top: 50px; }
+
+.container {
+  max-width: 800px;
+  margin: auto; }
+
+/* Specific mapael css class are below
+ * 'mapael' class is added by plugin
+*/
+.mapael .map {
+  position: relative; }
+
+.mapael .mapTooltip {
+  position: absolute;
+  background-color: #474c4b;
+  moz-opacity: 0.70;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1000;
+  max-width: 200px;
+  display: none;
+  color: #fff; }
+
+.modalHeader {
+  display: flex; }
+
+.TokyoImage {
+  width: 75px;
+  height: 75px;
+  background-image: url("../assets/220px-KaneijiPagoda1270.jpg");
+  background-size: 100% 100%; }
+
+.KyotoImage {
+  width: 75px;
+  height: 75px;
+  background-image: url("../assets/goldshrine.jpg");
+  background-size: 100% 100%; }
+
+.HiroshimaImage {
+  width: 75px;
+  height: 75px;
+  background-image: url("../assets/peacepark.jpg");
+  background-size: 100% 100%; }
+
+/*# sourceMappingURL=styles.css.map */

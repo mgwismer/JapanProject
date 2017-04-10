@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Map with some custom plotted cities and areas</title>
+  <link rel="stylesheet" type="text/css" media="all" href="../css/styles.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+          charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/jquery.mapael.js" charset="utf-8"></script>
+  <script src="../js/maps/japan_country.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../js/plotMap.js" charset="utf-8">
+  </script>
+
+</head>
+
+<body>
+<div class="container">
+  <h1>Map with some custom plotted cities and areas</h1>
+
+  <div class="mapcontainer">
+  <h4 id="log1"><h4>
+      <div class="map">
+          <span>Alternative content for the map</span>
+      </div>
+  </div>
+
+  <h4 id="log2"><h4>
+  <p><b>All example for jQuery Mapael are available <a href="https://www.vincentbroute.fr/mapael/">here</a>.</b></p>
+  <div class="modal fade" id="TokyoModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content bidContentModal">
+        <div class="modal-header modalHeader">
+          <div class="TokyoImage"> </div>
+          <h4 class="modal-title">A MASSIVE CITY</h4>
+        </div>
+        <div class="modal-body"> 
+          <p> officially Tokyo Metropolis, is the capital of Japan and one of its 47 prefectures. The Greater Tokyo Area is the most populous metropolitan area in the world. It is the seat of the Emperor of Japan and the Japanese government. Tokyo is in the Kantō region on the southeastern side of the main island Honshu and includes the Izu Islands and Ogasawara Islands. Formerly known as Edo, it has been the de facto seat of government since 1603 when Shogun Tokugawa Ieyasu made the city his headquarters. It officially became the capital after Emperor Meiji moved his seat to the city from the old capital of Kyoto in 1868; at that time Edo was renamed Tokyo. Tokyo Metropolis was formed in 1943 from the merger of the former Tokyo Prefecture (東京府 Tōkyō-fu) and the city of Tokyo (東京市 Tōkyō-shi).</p> 
+        </div> 
+        <div class="modal-footer"> 
+          <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div> <!-- close Modal content -->    
+    </div>
+  </div>
+  <div class="modal fade" id="KyotoModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content bidContentModal">
+        <div class="modal-header modalHeader">
+          <div class="KyotoImage"> </div>
+          <h4 class="modal-title">AN ANCIENT CITY</h4>
+        </div>
+        <div class="modal-body"> 
+          <p> Kyoto is a city located in the central part of the island of Honshu, Japan. It has a population close to 1.5 million. Formerly the Imperial capital of Japan for more than one thousand years, it is now the capital city of Kyoto Prefecture located in the Kansai region, as well as a major part of the Kyoto-Osaka-Kobe metropolitan area. Kyoto is also known as the thousand-year capital.</p> 
+        </div> 
+        <div class="modal-footer"> 
+          <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div> <!-- close Modal content -->    
+    </div>
+  </div>
+  <div class="modal fade" id="HiroshimaModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content bidContentModal">
+        <div class="modal-header modalHeader">
+          <div class="HiroshimaImage"> </div>
+          <h4 class="modal-title">A MODERN CITY</h4>
+        </div>
+        <div class="modal-body"> 
+          <p> Hiroshima (広島市 Hiroshima-shi?, Japanese: [çiɽo̞ɕimäɕi]) is the capital of Hiroshima Prefecture and the largest city in the Chūgoku region of western Honshu - the largest island of Japan. The city's name, 広島, means "Broad Island" in Japanese. Hiroshima gained city status on April 1, 1889. On April 1, 1980, Hiroshima became a designated city. As of August 2016, the city had an estimated population of 1,196,274. The GDP in Greater Hiroshima, Hiroshima Metropolitan Employment Area, is US$61.3 billion as of 2010.[1][2] Kazumi Matsui has been the city's mayor since April 2011.</p> 
+        </div> 
+        <div class="modal-footer"> 
+          <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div> <!-- close Modal content -->    
+    </div>
+  </div>
+</div>
+
+<script>
+$( document ).on( "mousemove", function( event ) {
+  $( "#log1" ).text( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+  $( "#log2" ).text( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+});
+</script>
+
+</body>
+</html>
