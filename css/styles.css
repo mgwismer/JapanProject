@@ -9,7 +9,11 @@ h1 {
 
 .container {
   max-width: 800px;
-  margin: auto; }
+  margin: auto;
+  border: 10px solid black; }
+
+.mapcontainer {
+  border: 10px solid black; }
 
 /* Specific mapael css class are below
  * 'mapael' class is added by plugin

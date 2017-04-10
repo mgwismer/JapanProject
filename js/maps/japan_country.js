@@ -36,15 +36,15 @@
                 yoffset,
                 x,
                 y;
-                xfactor = 42.833;
-                xoffset = -5192.2;
+                xfactor = 35.8429;
+                xoffset = -4590.09
                 x = (lon * xfactor) + xoffset;
                 
-                yfactor = -49.72;
-                yoffset = 2412.78;
+                yfactor = -45.5291;
+                yoffset = 2125.83;
                 y = (lat * yfactor) + yoffset;
                 console.log(x+" and "+y)
-              return {x : x-280, y : y-130};
+              return {x : x+10, y : y+10};
             },
             elems : {
                 "path14395" : "m 623.47,747.33 0.08,8.62",

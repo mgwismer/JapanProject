@@ -46,8 +46,8 @@ $(document).ready(function () {
       'Tokyo': {
           type: "circle",
           size: 20,
-          latitude: 35.6895,
-          longitude: 139.6917,
+          latitude: 35.7295,
+          longitude: 139.747344,
           tooltip: {content: "<span style=\"font-weight:bold;\">City :</span> Tokyo, a teeming metrolopis"},
           text: {content: "Tokyo"},
           eventHandlers: {
